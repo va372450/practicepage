@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: black;
+            cursor: pointer;
+            /* width:50vw;
+            height:50vh; */
+        }
+        *{
+            margin:0px 2px;
+            color: white;
+        }
+        .left{
+            display:inline-block;
+            /* border:2px solid black; */
+            position: absolute;
+            top:12px;
+        }
+        .left img{
+            width:110px
+        }
+        .mid{
+            display:block;
+            width:50%;
+            margin:32px auto;
+            /* border:2px solid white; */
+            font-size:x-large;
+                    
+            }
+        .mid a{
+            margin-top:23px;
+            margin:20px;
+        } 
+        .mid a:hover{
+            color:  rgb(248, 86, 86);
+            border-radius: 30px;
+        } 
+        
+
+         /* .mid option{
+             color: black;
+            
+         }
+         .mid select{
+             color: black;
+         } */
+         
+
+         
+        
+         .name a{
+             text-decoration: none;
+             float:left;
+         } 
+            
+        .right{
+            display: inline-block;
+            /* border:2px solid white; */
+            position: absolute;
+            right:2px;
+            top:51px;
+            font-size:x-large;
+        
+        }
+        .right option{
+            color: black;
+        }
+        .right select{
+            color: black;
+        }
+        .vehicle img{
+            width:700px;
+            margin:50px;
+            margin-left:600px;
+        }
+       .form{
+           width:450px;
+           height:430px;
+           border:1px solid white;
+           position: absolute;
+           top:150px;
+           left:70px;
+           padding:0px 12px;
+           border-radius: 20px;
+       }
+       .form h2{
+           text-align: center;
+           font-family:Verdana, Geneva, Tahoma, sans-serif;
+           color:gold;
+       }
+       .form1{
+        padding:6px 63px;
+       }
+       .form1 input{
+           text-align: center;
+           font-size:15px;
+           color:black;
+           border-radius: 30px;
+           width:300px;
+           height:20px;
+           cursor: pointer;
+        }
+       .form2{
+           margin:0px 73px;
+           
+       }
+       .form2 label{
+           cursor: pointer;
+       }
+       .form2 input{
+           cursor: pointer;
+       }
+       .form3{
+           margin:0px 73px;
+           padding:12px 23px;
+       }
+       .form3 input{
+           color: black;
+           font-weight:700;
+           border-radius: 20px;
+           width:120px;
+           cursor: pointer;
+           padding:5px 0px;
+       }
+       
+       .form h1{
+           font-style: italic;
+           color:red;
+           margin:2px 2px;
+       }
+       .form1 input:hover{
+            background-color: rgb(235, 200, 170);
+       }
+       .form3 input:hover{
+           background-color: rgb(185, 131, 82);
+
+       }
+       .terms a{
+           text-decoration: none;
+        font-size: 11px;
+        color:blue;
+        margin-left:160px;
+       }
+     
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="left">
+            <img src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/6b3ecd6a255eafddaa099aea7ebd7516-1521655681160/85a2df9a-5ea6-445e-9050-4547165470eb.jpg" alt="">
+        </div>
+        <div class="mid">
+          <div class="name"><a href="">Home</a></div>
+          <div class="name"><a href="">About</a></div>
+          <div class="name"><a href="">Archieve</a></div>
+            <div class="name"> <a href="">Login</a> </div>      
+        <div class="name"> <a href="">Register</a> 
+        </div>   </div>
+        <div class="right">
+            <form action="Backend.php">
+                Categories<select name="" id="" placeholder="Choose any">
+                    <option value="Bike">Bike</option>
+                    <option value="Cycle">Cycle</option>
+                    <option value="Car">Car</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Bus">Bus</option>
+                    <option value="Truck">Truck</option>
+                </select>
+                Contact<select name="" id="" placeholder="Choose any">
+                    <option value="E-mail">E-mail</option>
+                    <option value="Whatsapp">Whatsapp</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Call">Call</option>
+                </select>
+            </form>
+        </div>
+    </header> 
+    <div class="vehicle">
+        <div class="car">
+            <img src="https://images.moneycontrol.com/static-mcnews/2019/03/D04Xk87X0AATroy.jpg" alt="">
+        </div>
+         </div>
+         <div class="form">
+             <br>
+             <h2>Madison_87 Vehicles Industry</h2>
+             <br><br>
+             <div class="form1">
+                
+                 <input type="text" name="" id="name" placeholder="Full Name">
+             </div>
+             <!-- <input type="text" name="" id="name"> -->
+            <!-- </div>  -->
+            <div class="form1">
+            <input type="text" name="" id="" placeholder="Date Of Birth">
+            </div>
+             <div class="form1">
+                
+                 <input type="text" name="" id="email" placeholder="E-mail">
+             </div>
+             <div class="form1">
+                
+                 <input type="text" name="" id="number" placeholder='Mobile Number'>
+             </div>
+           <div class="form2">
+               <label for="sex"> Sex : Male</label>
+             <input type="radio" name="sex" id="sex"> Female &nbsp;<input type="radio" name="sex" id="">
+           </div>
+           <div class="form1">
+              
+               <input type="text" name="" id="address" placeholder="Address">
+           </div>
+           <div class="form3">
+               <input type="button" value="Submit">
+               <input type="button" value="Reset">
+           </div>
+           <div>
+           <h1>30% Sale For First Time Buyers </h1>
+           </div>
+           <div class="terms">
+
+              <a href="backend.php" target="_blank">Terms and Condition Apply .</a>
+           </div>
+</body>
+</html>
